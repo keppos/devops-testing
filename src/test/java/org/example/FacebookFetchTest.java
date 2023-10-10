@@ -7,7 +7,7 @@ public class FacebookFetchTest {
     @Test
     public void testGetFriends_validLink() {
         FacebookFetch parser = new FacebookFetch();
-        String[] friends = parser.getFriends("https://www.facebook.com/johndoe");
+        String[] friends = parser.getFriends("https://www.facebook.com/kevin_osterberg");
         Assert.assertArrayEquals(new String[]{"Friend1", "Friend2", "Friend3"}, friends);
     }
 
